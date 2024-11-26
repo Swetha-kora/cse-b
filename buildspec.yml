@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - yum install -y wget
+  build:
+    commands:
+      - echo Starting build...
+      - echo Build successful!
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
